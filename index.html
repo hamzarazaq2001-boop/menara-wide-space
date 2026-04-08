@@ -5,216 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menara Wide Space | Gestion des Déchets</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
-        .text-orange { color: #ff751f; }
-        .bg-orange { background-color: #ff751f; }
-        .bg-navy { background-color: #0f172a; }
-        .service-card:hover { transform: translateY(-10px); transition: 0.3s; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #FFFFFF; }
+        .text-mws-orange { color: #ff751f; }
+        .bg-mws-orange { background-color: #ff751f; }
+        .mws-navy { color: #0f172a; }
+        .card-shadow { box-shadow: 0 20px 50px rgba(0,0,0,0.04); }
+        .nav-link:hover { color: #ff751f; }
     </style>
 </head>
-<body class="bg-white text-slate-900">
+<body class="antialiased">
 
-    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm px-6 py-4 flex justify-between items-center">
-        <div class="flex items-center gap-2">
-            <div class="bg-orange p-2 rounded-lg text-white font-bold tracking-tighter">MWS</div>
-            <div>
-                <div class="font-extrabold text-sm leading-none">Menara Wide Space</div>
-                <div class="text-orange text-[10px] font-bold uppercase">Gestion des Déchets</div>
+    <nav class="flex justify-between items-center px-6 md:px-24 py-5 bg-white sticky top-0 z-50 border-b border-slate-50">
+        <div class="flex items-center gap-3">
+            <div class="bg-mws-orange text-white px-2 py-1 rounded-lg font-extrabold text-xl">MWS</div>
+            <div class="flex flex-col">
+                <span class="font-extrabold text-sm mws-navy leading-none">Menara Wide Space</span>
+                <span class="text-mws-orange text-[10px] font-bold uppercase tracking-tighter">Gestion des Déchets</span>
             </div>
         </div>
-        <div class="hidden md:flex space-x-8 text-sm font-semibold text-slate-700">
-            <a href="#accueil" class="hover:text-orange">Accueil</a>
-            <a href="#propos" class="hover:text-orange">À Propos</a>
-            <a href="#services" class="hover:text-orange">Nos Services</a>
-            <a href="#realisations" class="hover:text-orange">Réalisations</a>
-            <a href="#contact" class="bg-orange text-white px-5 py-2 rounded-full flex items-center gap-2">
-                <i class="fas fa-phone-alt text-xs"></i> Contactez-Nous
+        <div class="hidden md:flex items-center gap-10 text-[13px] font-bold text-slate-600 uppercase">
+            <a href="#" class="nav-link">Accueil</a>
+            <a href="#" class="nav-link">À Propos</a>
+            <a href="#" class="nav-link">Nos Services</a>
+            <a href="#" class="nav-link">Réalisations</a>
+            <a href="#" class="bg-mws-orange text-white px-7 py-3 rounded-full flex items-center gap-2 hover:opacity-90 transition">
+                <span>📞</span> Contactez-Nous
             </a>
         </div>
     </nav>
 
-    <section id="accueil" class="relative h-screen flex items-center px-6 md:px-20 bg-[url('https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=2070')] bg-cover bg-center">
-        <div class="absolute inset-0 bg-slate-900/60"></div>
-        <div class="relative z-10 max-w-4xl">
-            <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md border border-white/30 text-white px-4 py-1 rounded-full text-xs font-bold mb-6">
-                <i class="fas fa-leaf text-orange"></i> Excellence en Environnement
+    <section class="relative h-[90vh] flex items-center px-6 md:px-24">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1586760130613-b9dd6f1fbd3c?q=80&w=2070" class="w-full h-full object-cover brightness-[0.4]" alt="Truck">
+        </div>
+        <div class="relative z-10 max-w-4xl text-white">
+            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-1.5 rounded-full text-[11px] font-bold mb-8">
+                ✨ Excellence en Environnement
             </div>
-            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight">
-                Votre Partenaire de <br> Confiance pour la <br> <span class="text-orange">Gestion des Déchets</span>
+            <h1 class="text-6xl md:text-[85px] font-[800] leading-[1.05] mb-8">
+                Votre Partenaire de <br> Confiance pour la <br> <span class="text-mws-orange">Gestion des Déchets</span>
             </h1>
-            <p class="text-lg text-slate-200 mb-10 max-w-2xl">
-                Menara Wide Space s'engage au quotidien pour des villes marocaines plus propres. <span class="text-orange font-bold">Un espace propre, c'est notre mission.</span>
+            <p class="text-lg text-white/80 max-w-2xl mb-12 font-medium">
+                Menara Wide Space s'engage au quotidien pour des villes marocaines plus propres. <span class="text-mws-orange font-bold">Un espace propre, c'est notre mission.</span>
             </p>
-            <div class="flex flex-wrap gap-4">
-                <a href="#services" class="bg-orange text-white px-8 py-4 rounded-xl font-bold flex items-center gap-3 hover:scale-105 transition">
-                    Découvrir nos solutions <i class="fas fa-arrow-right"></i>
-                </a>
-                <a href="#realisations" class="bg-white/20 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-slate-900 transition">
+            <div class="flex flex-wrap gap-5">
+                <button class="bg-mws-orange px-10 py-5 rounded-2xl font-extrabold text-sm flex items-center gap-3">
+                    Découvrir nos solutions →
+                </button>
+                <button class="bg-white/10 backdrop-blur-lg border border-white/20 px-10 py-5 rounded-2xl font-extrabold text-sm">
                     Nos Réalisations
-                </a>
+                </button>
             </div>
         </div>
     </section>
 
-    <section id="propos" class="py-24 px-6 md:px-20 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+    <section class="py-32 px-6 md:px-24 bg-[#FAFAFA]">
+        <div class="text-center mb-20">
+            <p class="text-mws-orange font-extrabold text-[11px] uppercase tracking-[0.3em] mb-4">NOTRE EXPERTISE</p>
+            <h2 class="text-5xl font-extrabold mws-navy">Nos Services</h2>
+        </div>
+        <div class="grid md:grid-cols-4 gap-8">
+            <div class="bg-white p-10 rounded-[35px] card-shadow border border-slate-100 hover:border-orange-200 transition">
+                <div class="text-4xl mb-6">🗑️</div>
+                <h3 class="font-extrabold text-xl mws-navy mb-4">Transport des ordures ménagères</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Transport des ordures vers la décharge publique avec une flotte de camions bennes.</p>
+            </div>
+            <div class="bg-white p-10 rounded-[35px] card-shadow border border-slate-100 hover:border-orange-200 transition">
+                <div class="text-4xl mb-6">🍃</div>
+                <h3 class="font-extrabold text-xl mws-navy mb-4">Transport des déchets verts</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Transport de déchets verts issus des parcs, jardins et espaces naturels.</p>
+            </div>
+            <div class="bg-white p-10 rounded-[35px] card-shadow border border-slate-100 hover:border-orange-200 transition">
+                <div class="text-4xl mb-6">♻️</div>
+                <h3 class="font-extrabold text-xl mws-navy mb-4">Gestion & valorisation des ordures</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Valorisation des ordures ménagères pour un environnement urbain plus durable.</p>
+            </div>
+            <div class="bg-white p-10 rounded-[35px] card-shadow border border-slate-100 hover:border-orange-200 transition">
+                <div class="text-4xl mb-6">📢</div>
+                <h3 class="font-extrabold text-xl mws-navy mb-4">Entretien des espaces verts</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Tonte, taille, arrosage et aménagement paysager par des professionnels.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-6 md:px-24 grid md:grid-cols-2 gap-24 items-center">
         <div class="relative">
-            <img src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?q=80&w=2070" class="rounded-3xl shadow-2xl" alt="Bennes de tri">
-            <div class="absolute -bottom-6 -right-6 bg-orange p-8 rounded-3xl text-white shadow-xl">
-                <div class="text-4xl font-bold">10+</div>
-                <div class="text-sm font-semibold opacity-90 uppercase">Ans d'engagement</div>
+            <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?q=80&w=2070" class="rounded-[45px] shadow-2xl" alt="MWS Works">
+            <div class="absolute -bottom-8 -right-8 bg-mws-orange p-12 rounded-[35px] text-white shadow-2xl">
+                <p class="text-6xl font-[800]">10+</p>
+                <p class="text-[10px] font-bold uppercase tracking-widest opacity-80">Ans d'engagement</p>
             </div>
         </div>
-        <div>
-            <div class="text-orange font-bold uppercase text-sm tracking-widest mb-2">À PROPOS DE NOUS</div>
-            <h2 class="text-4xl font-extrabold mb-6 leading-snug">L'Excellence au Service de l'Environnement</h2>
-            <p class="text-slate-600 mb-8 leading-relaxed">
-                Menara Wide Space est une entreprise leader dans la gestion des déchets. Nous transportons les déchets vers les décharges publiques, collectons les déchets verts et gérons efficacement les ordures ménagères.
-            </p>
-            <ul class="space-y-4 mb-10">
-                <li class="flex items-center gap-3 font-semibold"><i class="far fa-check-circle text-orange text-xl"></i> Professionnalisme et rigueur opérationnelle</li>
-                <li class="flex items-center gap-3 font-semibold"><i class="far fa-check-circle text-orange text-xl"></i> Flotte de camions bennes, amplirol et tasseuses</li>
-                <li class="flex items-center gap-3 font-semibold"><i class="far fa-check-circle text-orange text-xl"></i> Engagement fort pour le développement durable</li>
-            </ul>
-            <div class="grid grid-cols-2 gap-8 pt-8 border-t border-slate-100">
-                <div><div class="text-3xl font-bold">10+</div><div class="text-xs text-slate-500 uppercase font-bold mt-1">Années d'expérience</div></div>
-                <div><div class="text-3xl font-bold">15</div><div class="text-xs text-slate-500 uppercase font-bold mt-1">Villes desservies</div></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="py-24 bg-slate-50 px-6">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-            <div class="text-orange font-bold uppercase text-xs tracking-[0.3em] mb-4">NOTRE EXPERTISE</div>
-            <h2 class="text-5xl font-extrabold mb-6">Nos Services</h2>
-            <p class="text-slate-500">Des solutions sur mesure pour répondre aux exigences environnementales des collectivités et des entreprises.</p>
-        </div>
-        <div class="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto">
-            <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm service-card">
-                <div class="bg-orange/10 w-14 h-14 rounded-2xl flex items-center justify-center mb-6">
-                    <i class="fas fa-trash-alt text-orange text-2xl"></i>
+        <div class="flex flex-col">
+            <p class="text-mws-orange font-extrabold text-[11px] uppercase tracking-widest mb-4">À PROPOS DE NOUS</p>
+            <h2 class="text-5xl font-extrabold mws-navy leading-tight mb-8">L'Excellence au Service de l'Environnement</h2>
+            <p class="text-slate-500 text-lg leading-relaxed mb-10 font-medium">Menara Wide Space est une entreprise leader dans la gestion des déchets. Nous transportons les déchets vers les décharges publiques et gérons efficacement les ordures ménagères.</p>
+            <div class="space-y-5">
+                <div class="flex items-center gap-4 font-bold text-slate-700">
+                    <span class="bg-mws-orange/10 p-1 rounded-full text-mws-orange text-xs">✓</span> Professionnalisme opérationnelle
                 </div>
-                <h3 class="text-xl font-bold mb-4">Transport des ordures ménagères</h3>
-                <p class="text-sm text-slate-500 leading-relaxed">Transport vers la décharge publique avec une flotte de camions bennes de dernière génération.</p>
-            </div>
-            <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm service-card">
-                <div class="bg-orange/10 w-14 h-14 rounded-2xl flex items-center justify-center mb-6">
-                    <i class="fas fa-wind text-orange text-2xl"></i>
+                <div class="flex items-center gap-4 font-bold text-slate-700">
+                    <span class="bg-mws-orange/10 p-1 rounded-full text-mws-orange text-xs">✓</span> Flotte de camions bennes et tasseuses
                 </div>
-                <h3 class="text-xl font-bold mb-4">Transport des déchets verts</h3>
-                <p class="text-sm text-slate-500 leading-relaxed">Collecte de toutes sortes de déchets verts issus des parcs et jardins.</p>
-            </div>
-            <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm service-card">
-                <div class="bg-orange/10 w-14 h-14 rounded-2xl flex items-center justify-center mb-6">
-                    <i class="fas fa-recycle text-orange text-2xl"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-4">Gestion & valorisation des ordures</h3>
-                <p class="text-sm text-slate-500 leading-relaxed">Valorisation pour un environnement urbain plus propre et durable.</p>
-            </div>
-            <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm service-card">
-                <div class="bg-orange/10 w-14 h-14 rounded-2xl flex items-center justify-center mb-6">
-                    <i class="fas fa-bullhorn text-orange text-2xl"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-4">Entretien des espaces verts</h3>
-                <p class="text-sm text-slate-500 leading-relaxed">Tonte, taille, arrosage et aménagement paysager professionnel.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="realisations" class="py-24 px-6 md:px-20 max-w-7xl mx-auto">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-            <div class="max-w-2xl">
-                <div class="text-orange font-bold uppercase text-xs tracking-widest mb-4">NOS RÉALISATIONS</div>
-                <h2 class="text-5xl font-extrabold leading-tight italic">Des Résultats Concrets <span class="text-orange not-italic">sur le Terrain</span></h2>
-            </div>
-            <p class="text-slate-500 max-w-sm text-sm">Chaque jour, nos équipes transforment positivement l'environnement urbain des villes marocaines.</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="relative h-[450px] rounded-3xl overflow-hidden group">
-                <img src="https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?q=80&w=2070" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                <div class="absolute bottom-8 left-8">
-                    <span class="bg-orange text-white text-[10px] font-black px-3 py-1 rounded mb-3 inline-block">PROPRETÉ</span>
-                    <h4 class="text-2xl font-bold text-white mb-1">Nettoyage Urbain</h4>
-                    <p class="text-white/60 text-xs uppercase font-bold tracking-widest">Casablanca</p>
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div class="relative h-[217px] rounded-3xl overflow-hidden group">
-                    <img src="https://images.unsplash.com/photo-1599707333647-739343949f2b?q=80&w=2070" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-                    <div class="absolute inset-0 bg-black/40"></div>
-                    <div class="absolute bottom-6 left-6">
-                        <span class="bg-orange text-white text-[10px] font-black px-3 py-1 rounded mb-2 inline-block uppercase">Équipement</span>
-                        <h4 class="text-xl font-bold text-white uppercase">Flotte Écologique</h4>
-                    </div>
-                </div>
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="relative h-[217px] rounded-3xl overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?q=80&w=2071" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/30"></div>
-                    </div>
-                    <div class="relative h-[217px] rounded-3xl overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=2070" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-black/30"></div>
-                    </div>
+                <div class="flex items-center gap-4 font-bold text-slate-700">
+                    <span class="bg-mws-orange/10 p-1 rounded-full text-mws-orange text-xs">✓</span> Engagement pour le développement durable
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-24 px-6 bg-slate-50">
-        <h2 class="text-center text-4xl font-extrabold mb-16 uppercase">Parlons de vos besoins</h2>
-        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-10 rounded-3xl shadow-sm space-y-8">
-                <h3 class="text-xl font-bold border-b pb-4">Informations</h3>
-                <div class="flex gap-4">
-                    <div class="bg-orange/10 w-12 h-12 rounded-full flex items-center justify-center text-orange shrink-0"><i class="fas fa-map-marker-alt"></i></div>
-                    <div><p class="font-bold">Adresse</p><p class="text-slate-500 text-sm">Av Abdelkrim El Khattabi, Maroc</p></div>
-                </div>
-                <div class="flex gap-4">
-                    <div class="bg-orange/10 w-12 h-12 rounded-full flex items-center justify-center text-orange shrink-0"><i class="fas fa-phone"></i></div>
-                    <div><p class="font-bold">Téléphone</p><p class="text-slate-500 text-sm">+212 661-219-814</p></div>
-                </div>
-                <div class="flex gap-4">
-                    <div class="bg-orange/10 w-12 h-12 rounded-full flex items-center justify-center text-orange shrink-0"><i class="fas fa-envelope"></i></div>
-                    <div><p class="font-bold">Email</p><p class="text-slate-500 text-sm">contact@menarawidespace.ma</p></div>
-                </div>
-            </div>
-            <div class="md:col-span-2 bg-white p-10 rounded-3xl shadow-sm">
-                <form class="grid grid-cols-2 gap-6">
-                    <div><label class="block text-xs font-bold uppercase mb-2">Nom & Prénom</label><input type="text" placeholder="Votre nom complet" class="w-full bg-slate-50 border border-slate-200 p-4 rounded-xl focus:border-orange outline-none"></div>
-                    <div><label class="block text-xs font-bold uppercase mb-2">Email</label><input type="email" placeholder="votre@email.com" class="w-full bg-slate-50 border border-slate-200 p-4 rounded-xl focus:border-orange outline-none"></div>
-                    <div class="col-span-2"><label class="block text-xs font-bold uppercase mb-2">Message</label><textarea rows="5" class="w-full bg-slate-50 border border-slate-200 p-4 rounded-xl focus:border-orange outline-none" placeholder="Détaillez votre demande ici..."></textarea></div>
-                    <button class="bg-orange text-white font-bold py-4 px-10 rounded-xl flex items-center justify-center gap-3 w-fit">Envoyer le message <i class="fas fa-paper-plane"></i></button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-navy pt-24 pb-12 px-6 md:px-20 text-white">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-16 border-b border-white/5 pb-16">
+    <footer class="bg-[#0A0F1C] text-white pt-32 pb-12 px-6 md:px-24">
+        <div class="grid md:grid-cols-4 gap-20 border-b border-white/5 pb-20 mb-10">
             <div class="col-span-1">
-                <div class="flex items-center gap-2 mb-6">
-                    <div class="bg-orange p-2 rounded-lg text-white font-bold tracking-tighter">MWS</div>
-                    <div class="font-bold uppercase text-sm">Menara Wide Space</div>
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="bg-mws-orange px-2 py-1 rounded-lg font-bold text-lg">MWS</div>
+                    <span class="font-extrabold text-sm uppercase">Menara Wide Space</span>
                 </div>
-                <p class="text-slate-400 text-sm leading-relaxed mb-8">Votre partenaire de confiance pour la propreté urbaine et la gestion environnementale à travers le Maroc.</p>
-                <div class="flex gap-4 text-xl">
-                    <i class="fab fa-facebook hover:text-orange cursor-pointer"></i>
-                    <i class="fab fa-linkedin hover:text-orange cursor-pointer"></i>
-                    <i class="fab fa-instagram hover:text-orange cursor-pointer"></i>
-                </div>
+                <p class="text-slate-500 text-sm leading-relaxed">Votre partenaire de confiance pour la propreté urbaine au Maroc.</p>
             </div>
-            <div><h4 class="font-bold mb-8 uppercase tracking-widest text-sm">Navigation</h4><ul class="space-y-4 text-slate-400 text-sm"><li><a href="#accueil" class="hover:text-white">Accueil</a></li><li><a href="#propos" class="hover:text-white">À Propos</a></li><li><a href="#services" class="hover:text-white">Nos Services</a></li><li><a href="#realisations" class="hover:text-white">Réalisations</a></li></ul></div>
-            <div><h4 class="font-bold mb-8 uppercase tracking-widest text-sm">Services</h4><ul class="space-y-4 text-slate-400 text-sm"><li>Transport Ordures</li><li>Déchets Verts</li><li>Gestion & Valorisation</li><li>Espaces Verts</li></ul></div>
-            <div><h4 class="font-bold mb-8 uppercase tracking-widest text-sm">Engagements</h4><div class="flex gap-4"><div class="border border-white/10 p-3 text-[10px] font-bold">ISO 9001</div><div class="border border-white/10 p-3 text-[10px] font-bold">ISO 14001</div></div></div>
+            <div>
+                <h4 class="font-extrabold text-xs uppercase tracking-widest mb-10">Navigation</h4>
+                <ul class="space-y-4 text-slate-400 font-bold text-sm"><li>Accueil</li><li>À Propos</li><li>Nos Services</li></ul>
+            </div>
+            <div>
+                <h4 class="font-extrabold text-xs uppercase tracking-widest mb-10">Services</h4>
+                <ul class="space-y-4 text-slate-400 font-bold text-sm"><li>Ordures Ménagères</li><li>Déchets Verts</li><li>Valorisation</li></ul>
+            </div>
+            <div>
+                <h4 class="font-extrabold text-xs uppercase tracking-widest mb-10">Contact</h4>
+                <p class="text-slate-400 font-bold text-sm">+212 661-219-814</p>
+                <p class="text-slate-400 font-bold text-sm mt-2">contact@menarawidespace.ma</p>
+            </div>
         </div>
-        <div class="max-w-7xl mx-auto pt-10 flex flex-col md:flex-row justify-between items-center text-[10px] text-slate-500 font-bold uppercase tracking-widest">
-            <p>© 2026 MENARA WIDE SPACE. TOUS DROITS RÉSERVÉS.</p>
-            <a href="#accueil" class="flex items-center gap-2">Retour en haut <i class="fas fa-arrow-up"></i></a>
-        </div>
+        <p class="text-center text-[10px] text-slate-600 font-bold uppercase tracking-widest">© 2026 Menara Wide Space . Tous Droits Réservés</p>
     </footer>
 
 </body>
